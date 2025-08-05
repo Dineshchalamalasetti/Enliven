@@ -1,55 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>enliven solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUTECH</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Enliven <br> Solutions</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <input type="srch" name="" placeholder="Type To Text">
-                <a href="#"><button class="btn">Search</button></a>
-            </div>
+    <nav class="navbar">
+        <div class="logo">EDUTECH</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link" data-page="home">Home</a></li>
+            <li><a href="#courses" class="nav-link" data-page="courses">Courses</a></li>
+            <li><a href="#analytics" class="nav-link" data-page="analytics">Performance Analytics</a></li>
+            <li><a href="#cart" class="nav-link" data-page="cart">Cart</a></li>
+            <li><a href="#payment" class="nav-link" data-page="payment">Payment</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="loginBtn" class="btn login-btn">Login</button>
+            <input type="text" id="searchInput" placeholder="Search courses...">
+            <button id="searchBtn" class="btn search-btn">Search</button>
+            <button id="filterBtn" class="btn filter-btn">Filter</button>
         </div>
-        <div class="content">
-            <h1>Web Design,<br> <span>Development &</span> <br> Brodcast Design</h1>
-            <p class="par">EnLiven Solutions aims for technical and creative innovation in every project. <br>We believe in a design process .Which requires research and experimentation <br>combined with close communication and collaboration with client's.</p>
-            <button class="cn"><a href="#">JOIN US</a></button>
-        </div>
-        <div class="form">
-            <h2>Login here</h2>
-            <input type="email" placeholder="Enter Email Here">
-            <input type="password" name="" placeholder="Enter Password Here">
-            <button class="btnn"><a href="#">Login</a></button>
-
-            <p class="link">Don't have an account<br>
-            <a href="#">sign up </a>here</p>
-            <p class="liw">Log in with</p>
-
-            <div class="icon">
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon> </a>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon> </a>
-                <a href="#"><ion-icon name="logo-twitter"></ion-icon> </a>
-                <a href="#"><ion-icon name="logo-google"></ion-icon> </a>
-                <a href="#"><ion-icon name="logo-skype"></ion-icon> </a>
-
-            </div>
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </nav>
+    <main id="main-content">
+        <!-- Dynamic content will be injected here by app.js -->
+    </main>
+    <div id="popup" class="popup"></div>
+    <script src="app.js"></script>
 </body>
 </html>
